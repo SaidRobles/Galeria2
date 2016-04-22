@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>GALERIA ILSE</title>
+  <P>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>App Galeria Articulos</title>
+
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="javascript/jquery.tools.min.js"></script>
+
+</head>
+
+<body>
+<h1>MI GALERIA</h1>
+
+	<div id="actions">
+		<a class="prev disabled">Back</a>
+		<a class="next">Next</a>
+	</div>
+	
+	<div class="scrollable vertical">
+		<div class="items">
+			<div id="capa">
+				<div class="item">
+					<div id="ImgItem">
+						<img src="images_galery/imagen1.jpg" width=100% height=100% rel="#ProductoUno" />
+					</div>
+					<div id="NameItem">HOLA MI NOMBRE ES ILSE DANIELA</div>
+					<div id="DescripItem"><div>ESTUDIO ACTUALMENTE EN EL TECNOLOGICO DE CUAUTLA</div>
+				    <div>EN EL 8VO SEMESTRE DE INGENIERIA EN SISTEMAS COMPUTACIONALES</div>
+				</div>
+
+					<!-- PRODUCTO UNO -->
+
+					<div class="apple_overlay black" id="ProductoUno">
+					  <img src="images_galery/imagen1.jpg"width=100% height=100% rel="#ProductoUno"/>
+					  <div class="details">
+					    <h2>ILSE DANIELA DIAZ RAMIREZ</h2>
+                        <br />
+					    <p>
+					      TECNOLOGICO DE CUAUTLA
+					    </p>
+					  </div>
+					</div>
+                    
+                    <!-- FIN PRODUCTO UNO -->
+                    <div id="actions">
+		<a class="prev disabled">Back</a>
+		<a class="next">Next</a>
+	</div>
+	
+	<div class="scrollable vertical">
+		<div class="items">
+			<div id="capa">
+				<div class="item">
+					<div id="ImgItem">
+						<img src="images_galery/imagen2.jpg"width=100% height=100% rel="#ProductoDos" />
+					</div>
+					<div id="NameItem">MIS GUSTOS</div>
+					<div id="DescripItem"><div>MI DEPORTE FAVORITO ES EL BASEBALL</div>
+					<div>ME ENCANTA SALIA A PASEAR</div>
+					<div>Y PASAR EL MAYOR TIEMPO ALADO DE MI HIJA</div>
+				</div>
+				<div class="apple_overlay black" id="ProductoDos">
+					  <img src="images_galery/imagen2.jpg"width=100% height=50% rel="#ProductoDos"/>
+					  <div class="details2">
+					    <h2>ILSE DANIELA DIAZ RAMIREZ</h2>
+                        <br />
+					    <p>
+					      FOTO CON MI PEQUEÑA PRINCESA
+					    </p>
+					  </div>
+					</div>
+
+					<!-- PRODUCTO UNO -->
+
+					
+                    
+                    <!-- FIN PRODUCTO UNO -->
+                   
+
+
+			<script>
+			  $(function() {
+			      $("#ImgItem img[rel]").overlay({effect: 'apple'});
+			    });
+			</script>
+			<!-- PRODUCTO UNO -->
+
+					<div class="apple_overlay black" id="ProductoUno">
+					  <img src="images_galery/imagen1.png" />
+					  <div class="details">
+					    <h2>ilse</h2>
+                        <br />
+					    <p>
+					      Información General del Producto.
+					    </p>
+					  </div>
+					</div>
+
+                    
+                    <!-- FIN PRODUCTO UNO -->
+
+			<script>
+			  $(function() {
+			      $("#ImgItem img[rel]").overlay({effect: 'apple'});
+			    });
+			</script>
+
+				
+		</div>
+	</div>
+
+	<script>
+$(function() {
+    $(".scrollable").scrollable({ vertical: true, mousewheel: true });
+});
+</script>
+
+</body>
+</html>
